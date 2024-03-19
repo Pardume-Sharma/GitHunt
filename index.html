@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHunt</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="https://th.bing.com/th/id/OIP.U2pkQUd1RXpozx_pPsE12QAAAA?w=170&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"
+      type="image/x-icon"
+    />
+    <meta title="" content="" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="header-logo anime">
+          <img
+            src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol.png"
+            alt=""
+            class="logo-img"
+          />
+          <div class="logo-title">GitHunt</div>
+        </div>
+        <nav class="navbar">
+          <a href="#" class="nav-links anime">Home</a>
+          <a href="#service" class="nav-links anime">Services</a>
+          <a href="#feed" class="nav-links anime">Feedback</a>
+          <a href="#about" class="nav-links anime">About</a>
+        </nav>
+        <i class="fas fa-moon" style="display: none;" id="mode"></i>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="hero-section">
+          <div class="hero-heading">
+            A One Site Solution! Hunt GitHub user's
+          </div>
+          <div class="hero-content">
+            Welcome to GitHunt! Discover, connect, and collaborate with fellow
+            developers around the globe.
+          </div>
+          <form class="myform search">
+            <input
+              type="text"
+              required
+              autofocus
+              placeholder="Enter a GitHub Username.."
+              id="user"
+            />
+            <button class="submit">Search</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="services" id="service">
+        <div class="box">
+          <img
+            class="box-img"
+            src="https://th.bing.com/th/id/OIP.Cl56H6WgxJ8npVqyhefTdQHaHa?w=166&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"
+            alt=""
+          />
+          <div class="box-content">No Login Required</div>
+        </div>
+
+        <div class="box">
+          <img
+            class="box-img"
+            src="https://th.bing.com/th/id/OIP.QSq-rZda30aMW84D6Pb2-wHaHa?rs=1&pid=ImgDetMain"
+            alt=""
+          />
+          <div class="box-content">Easy to Access Repositories</div>
+        </div>
+
+        <div class="box">
+          <img
+            class="box-img"
+            src="https://cdn3.iconfinder.com/data/icons/fintech-color-pop-vol-2/64/secure-1024.png"
+            alt=""
+          />
+          <div class="box-content">Safe and Secured</div>
+        </div>
+      </div>
+      <section class="newsletter" id="feed">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <h3>Feedback Form</h3>
+          <input
+            type="hidden"
+            name="access_key"
+            value="ac691ca3-9abd-45a3-a2a5-1c39bfe387f2"
+          />
+
+          <!-- <input type="hidden" name="access_key" value="ac691ca3-9abd-45a3-a2a5-1c39bfe387f2"> -->
+
+          <input
+            type="text"
+            name="name"
+            class="form-box"
+            placeholder="Enter your Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            class="form-box"
+            placeholder="Enter your email"
+            required
+          />
+          <textarea
+            name="message"
+            class="form-box"
+            placeholder="Give your Feedback "
+            required
+          ></textarea>
+          <!-- <div class="h-captcha" data-captcha="true"></div> -->
+          <p id="thanks"></p>
+          <button type="submit" class="news-btn" onclick="thanks()">
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <section id="section"></section>
+
+    <div class="footer-container" id="about">
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="comp-logo">
+            <a class="logo-link" href="#">
+              <img
+                class="logo-svg"
+                src="logo.svg"
+              />
+              GitHunt
+            </a>
+          </div>
+          <p class="filler-text">Xplore GitHub</p>
+        </div>
+
+        <div class="footer-grid">
+          <div class="footer-grid-column">
+            <div class="footer-grid-heading">Products</div>
+            <ul class="footer-links-list">
+              <li>
+                <a href="#features" class="footer-link">Features</a>
+              </li>
+              <li>
+                <a href="dashboard.html" class="footer-link">Solutions</a>
+              </li>
+            </ul>
+          </div>
+          <!-- column 2 -->
+          <div class="footer-grid-column">
+            <div class="footer-grid-heading">Company</div>
+            <ul class="footer-links-list">
+              <li>
+                <a href="#" class="footer-link">GitHunt</a>
+              </li>
+              <li>
+                <a href="https://www.chitkara.edu.in" class="footer-link"
+                  >Chitkara</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- column 3 -->
+          <div class="footer-grid-column">
+            <div class="footer-grid-heading">Support</div>
+            <ul class="footer-links-list">
+              <li>
+                <a href="tel:+7973789157" class="footer-link">Contact Us</a>
+              </li>
+              <li>
+                <a
+                  href="mailto:pardume638.be22@chitkara.edu.in"
+                  class="footer-link"
+                  >Mail Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <div class="footer-copyright">
+        © 2024 - Present GitHunt. All rights reserved.
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
