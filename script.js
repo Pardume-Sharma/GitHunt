@@ -38,7 +38,7 @@ form.addEventListener("submit", (e) => {
   alert(originalName);
   main.innerHTML = "";
 
-  var token = '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';
+  var token = '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';
 
   fetch(`https://api.github.com/users/${search}`, {
     headers: {
